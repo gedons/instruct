@@ -51,7 +51,7 @@ export default {
   methods: {
     async simulateCode() {
       try {
-        const response = await axios.post('http://127.0.0.1:5000/simulate', {
+        const response = await axios.post('https://instruct-api.onrender.com/simulate', {
           machine_code: this.machineCode.split('\n')
         });
         this.registers = response.data.registers;

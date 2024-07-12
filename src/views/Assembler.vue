@@ -45,7 +45,7 @@ export default {
   methods: {
     async assembleCode() {
       try {
-        const response = await axios.post('http://127.0.0.1:5000/assemble', {
+        const response = await axios.post('https://instruct-api.onrender.com/assemble', {
           assembly_code: this.assemblyCode
         });
         this.machineCode = response.data.machine_code;
